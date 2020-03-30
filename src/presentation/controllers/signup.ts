@@ -7,7 +7,7 @@ export class SignUpController {
       return badRequest(new MissingParamError('name'))
     }
     if (!httpRequest.body.email) {
-      return badRequest(new MissingParamError('name'))
+      return badRequest(new MissingParamError('email'))
     }
   }
 }
